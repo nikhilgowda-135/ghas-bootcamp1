@@ -4,16 +4,17 @@
 # https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
 
 version: 2
-updates:
-  - package-ecosystem: "pip"
-    directory: "/authn-service"
+updates:       # Enable version updates for pip
+  - package-ecosystem: "pip"  # Specifies the package manager (Python)
+    directory: "/authn-service"  # Path to the directory containing requirements.txt
     schedule:
-      interval: "daily"
+      interval: "daily"  # Sets the update frequency to daily
     labels:
-      - "triage-required"
+      - "triage-required"  # Adds a label indicating the PR needs triage
     assignees:
-      - "dungeonstechlead"
+      - "dungeonstechlead"  # Assigns the PR to the tech lead
     reviewers:
-      - "dragonsengineer"
+      - "dragonsengineer"  # Requests a review from the engineer
     commit-message:
-      prefix: "pip"
+      prefix: "pip"  # Prefixes commit messages with 'pip'
+
