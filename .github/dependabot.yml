@@ -5,7 +5,15 @@
 
 version: 2
 updates:
-  - package-ecosystem: "pip" # See documentation for possible values
-    directory: "/package-lock.json" # Location of package manifests
+  - package-ecosystem: "pip"
+    directory: "/authn-service"
     schedule:
       interval: "daily"
+    labels:
+      - "triage-required"
+    assignees:
+      - "dungeonstechlead"
+    reviewers:
+      - "dragonsengineer"
+    commit-message:
+      prefix: "pip"
