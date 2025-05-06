@@ -6,7 +6,6 @@
 version: 2
 updates:
   - package-ecosystem: "express" # See documentation for possible values
-    directory: "/ghas-bootcamp1/frontend
-/package-lock.json" # Location of package manifests
+    directory: "/package-lock.json" # Location of package manifests
     schedule:
       interval: "daily"
