@@ -16,5 +16,5 @@ updates:       # Enable version updates for pip
     reviewers:
       - "dragonsengineer"  # Requests a review from the engineer
     commit-message:
-      prefix: "pip"  # Prefixes commit messages with 'pip'
+      prefix: "pip"  # Prefixes commit messages with 'pip',
 
