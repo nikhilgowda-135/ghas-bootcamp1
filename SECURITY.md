@@ -1,5 +1,9 @@
 # Security Policy
 
+how users should report security vulnerabilities and what steps you take to handle them.
+
+It helps build trust in your project and supports responsible disclosure practices.
+
 ## Supported Versions
 
 Use this section to tell people about which versions of your project are
