@@ -1,0 +1,14 @@
+version: 2  # Specifies the version of the Dependabot configuration format
+updates:
+  - package-ecosystem: "pip"         # Use pip (Python) to check for dependency updates
+    directory: "/authn-service"      # Location of the dependency files (like requirements.txt)
+    schedule:
+      interval: "daily"              # Check for updates every day
+    labels:
+      - "triage-required"            # Label applied to PRs created by Dependabot
+    assignees:
+      - "santhoshsingaraju"            # GitHub user assigned to the pull request
+    reviewers:
+      - "nikhilgowda-135"            # GitHub user requested to review the pull request
+    commit-message:
+      prefix: "pip"                  # Prefix for commit messages to help identify update type
